@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 10f4781cf45419848b15f25fe2dd6f6f
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 136825
+  packageName: Pixel Dark Forest
+  packageVersion: 1.1
+  assetPath: Assets/Dark_Forest/about.txt
+  uploadId: 310608

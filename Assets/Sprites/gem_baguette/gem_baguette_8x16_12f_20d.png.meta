@@ -334,7 +334,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gem_baguette_8x16_12f_20d_0: 819040891306507440
+      gem_baguette_8x16_12f_20d_1: -2852258062750573360
+      gem_baguette_8x16_12f_20d_2: 4379354420134389997
+      gem_baguette_8x16_12f_20d_3: -3733637263315776533
+      gem_baguette_8x16_12f_20d_4: 3944909561545409775
+      gem_baguette_8x16_12f_20d_5: 8413509554442583079
+      gem_baguette_8x16_12f_20d_6: 9118496469077327637
+      gem_baguette_8x16_12f_20d_7: -4941566763691454716
+      gem_baguette_8x16_12f_20d_8: 5825039157652128656
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -25,6 +25,12 @@ public class Player : MonoBehaviour
     //gema
     public GameObject gema;
 
+
+    //tiempo
+    public TextMeshProUGUI txtTimer;
+    private float timeValue;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -33,6 +39,9 @@ public class Player : MonoBehaviour
 
         Contador = 0;
         gema.gameObject.SetActive(true);
+
+        timeValue = 50;
+
     }
 
     // Update is called once per frame
@@ -43,6 +52,26 @@ public class Player : MonoBehaviour
         transform.Translate(horizontal * runSpeed * Time.deltaTime, 0, 0);
 
         txtContador.text = "" + Contador; //score
+
+
+        timeValue -= Time.deltaTime;
+
+        txtTimer.text = FormatearTiempo(timeValue);
+
+        string FormatearTiempo(float timeValueo)
+        {
+
+            //Formateo minutos y segundos a dos d�gitos
+            //string minutos = Mathf.Floor(timeValue / 60).ToString("00");
+            string segundos = Mathf.Floor(timeValue % 60).ToString("00");
+
+            //Devuelvo el string formateado con : como separador
+            return "Time: " + segundos;
+        }
+
+
+
+
 
         if (horizontal > 0)
         {
@@ -61,7 +90,10 @@ public class Player : MonoBehaviour
             anim.SetBool("Walk_L", false);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && Mathf.Abs(rb.velocity.y) < 0.0001)
+        if (Input.GetKeyDown(KeyCode.Space) && Mathf.Abs(rb.linearVelocity.y) < 0.0001)
+
+        if (Input.GetKeyDown(KeyCode.Space) && Mathf.Abs(rb.linearVelocity.y) < 0.0001)
+
         {
             //anim.SetBool("Jump", true);
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);

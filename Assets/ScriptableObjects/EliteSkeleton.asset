@@ -14,23 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attack: 2
   hp: 5
-  handL: {fileID: -1726349966218203416, guid: d7bcb6b0a47d0554a983e1cbcf74f212, type: 3}
-  armLup: {fileID: 741406227865331835, guid: d7bcb6b0a47d0554a983e1cbcf74f212, type: 3}
-  armLdwn: {fileID: 1229771443119327036, guid: d7bcb6b0a47d0554a983e1cbcf74f212, type: 3}
-  eyes: {fileID: 7247496614076174185, guid: d7bcb6b0a47d0554a983e1cbcf74f212, type: 3}
-  skull: {fileID: 4251071312307029872, guid: d7bcb6b0a47d0554a983e1cbcf74f212, type: 3}
-  ribbs: {fileID: -1299358497048632825, guid: d7bcb6b0a47d0554a983e1cbcf74f212, type: 3}
-  legLup: {fileID: -4054180960951231917, guid: d7bcb6b0a47d0554a983e1cbcf74f212, type: 3}
-  legLdwn: {fileID: -1364353052433088387, guid: d7bcb6b0a47d0554a983e1cbcf74f212, type: 3}
-  footL: {fileID: -879523171193644946, guid: d7bcb6b0a47d0554a983e1cbcf74f212, type: 3}
-  pelv: {fileID: -1602338086827447497, guid: d7bcb6b0a47d0554a983e1cbcf74f212, type: 3}
-  spine: {fileID: -1723372200163385085, guid: d7bcb6b0a47d0554a983e1cbcf74f212, type: 3}
-  legRup: {fileID: -2350293237335066999, guid: d7bcb6b0a47d0554a983e1cbcf74f212, type: 3}
-  legRdwn: {fileID: -398396299895825731, guid: d7bcb6b0a47d0554a983e1cbcf74f212, type: 3}
-  handR: {fileID: 3101688967167761902, guid: d7bcb6b0a47d0554a983e1cbcf74f212, type: 3}
-  armRup: {fileID: 1698466149393806976, guid: d7bcb6b0a47d0554a983e1cbcf74f212, type: 3}
-  armRdwn: {fileID: -6140447295280167309, guid: d7bcb6b0a47d0554a983e1cbcf74f212, type: 3}
-  footR: {fileID: 7045321945668176953, guid: d7bcb6b0a47d0554a983e1cbcf74f212, type: 3}
-  skull_back: {fileID: 0}
+  handL: {fileID: 1904917220956785153, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  armLup: {fileID: 7741090865953942973, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  armLdwn: {fileID: 6936713861258854839, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  eyes: {fileID: 8248105740514632595, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  skull: {fileID: -3809517832424694339, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  ribbs: {fileID: -3280731413759696995, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  legLup: {fileID: -9179500336127258705, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  legLdwn: {fileID: -5200582396247425227, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  footL: {fileID: -1189816576475513783, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  pelv: {fileID: -2461139340913113788, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  spine: {fileID: -4795966419795555497, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  legRup: {fileID: -5887952053445295839, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  legRdwn: {fileID: -6283447467550141929, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  handR: {fileID: -6427860980135409040, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  armRup: {fileID: 499837098425899134, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  armRdwn: {fileID: 3419324946630680822, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  footR: {fileID: -9044476921313495690, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  skull_back: {fileID: -906191128830534531, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
   weapon: {fileID: 0}
-  skColor: {r: 1, g: 1, b: 1, a: 1}
+  skColor: {r: 1, g: 0.9295865, b: 0, a: 1}

@@ -30,6 +30,10 @@ public class Player : MonoBehaviour
     public TextMeshProUGUI txtTimer;
     private float timeValue;
 
+    //ganaste, perdiste
+    public GameObject ganaste;
+    public GameObject perdiste;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -41,6 +45,9 @@ public class Player : MonoBehaviour
         gema.gameObject.SetActive(true);
 
         timeValue = 50;
+
+        ganaste.gameObject.SetActive(false);
+        perdiste.gameObject.SetActive(false);
 
     }
 
@@ -100,16 +107,41 @@ public class Player : MonoBehaviour
            
         }
         // Set Jump animation based on vertical velocity
-       /* if (Mathf.Abs(rb.velocity.y) > 0.85f)
+        /* if (Mathf.Abs(rb.velocity.y) > 0.85f)
+         {
+             anim.SetBool("Jump", true); // Player is in the air
+         }
+         else
+         {
+             anim.SetBool("Jump", false); // Player is on the ground
+         }
+
+         */
+
+
+        if (Contador == 1)
         {
-            anim.SetBool("Jump", true); // Player is in the air
-        }
-        else
-        {
-            anim.SetBool("Jump", false); // Player is on the ground
+           
+            ganaste.gameObject.SetActive(true);
+            runSpeed = 0;
+            jumpForce = 0;
+            Time.timeScale = 0;
+            txtTimer.gameObject.SetActive(false);
         }
 
-        */
+
+        if (timeValue <= 0)
+        {
+
+            perdiste.gameObject.SetActive(true);
+            Time.timeScale = 0;
+            runSpeed = 0;
+            jumpForce = 0;
+            txtTimer.gameObject.SetActive(false);
+        }
+
+
+
 
     }
 

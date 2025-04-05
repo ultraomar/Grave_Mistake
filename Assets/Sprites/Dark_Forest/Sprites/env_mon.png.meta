@@ -50,12 +50,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -86,7 +86,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -99,10 +99,560 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: env_mon_0
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 208
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 287d59af504f1c0439e34c31a501a5aa
+      internalID: -261293990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_mon_1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 432
+        width: 80
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c606d5f038ed30e4882914a59b5f6487
+      internalID: -1552717178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_mon_2
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 368
+        width: 24
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 201a30ad22e12a44c98bc5560f89556b
+      internalID: 1285322116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_mon_3
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 368
+        width: 24
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9379ec40000d3a945b93adf138a19208
+      internalID: -972579961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_mon_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8cbac13bb1ce74448e0966c9cea0c92
+      internalID: -1198550470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_mon_7
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 128
+        width: 32
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f77ca1f25974549ad7d14903e219bb
+      internalID: -1015481674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_mon_8
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 32
+        width: 32
+        height: 119
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be6fcfdc9be72714f87565671130970b
+      internalID: 1439512204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_mon_9
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 128
+        width: 62
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69cd3d24176bec43b876299db1fce4d
+      internalID: 1759702565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_mon_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 16
+        width: 30
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3940a81d52f459543afca66b168070ff
+      internalID: 29679508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_mon_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1
+        width: 64
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df21536dff5602e4d81ead8229cb0d85
+      internalID: 898135445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_mon_12
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 16
+        width: 88
+        height: 102
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b28c0fe8224adca45aeec3fa4d7b2b45
+      internalID: -1385230520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_mon_13
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 16
+        width: 88
+        height: 102
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eaeafe06c0b4da4e81016300d8dcd0d
+      internalID: 885629627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_mon_14
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 32
+        width: 16
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1337a86a449abc74b8d5af43ce80e2e0
+      internalID: 168776314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_mon_15
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 80
+        width: 57
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3db47aadaa87f9848be6636b9f4a1c08
+      internalID: -1792654668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_mon_16
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 32
+        width: 66
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f0dda4973875a4ab5cb9b89b38c947
+      internalID: -1367857178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_mon_17
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 0
+        width: 9
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdfcb23626bbd6f4ba751ccc044450e4
+      internalID: -1000390390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_mon_18
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 16
+        width: 16
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 566d7193bd2343c4ba617224c928641a
+      internalID: 1554368217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_mon_19
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 16
+        width: 24
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc2a8079d051bd04290a64b358550ef4
+      internalID: -647553589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_mon_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 144
+        width: 112
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0565c755aec28d4fbbfce79cdbee121
+      internalID: 1644265422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_mon_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 272
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 926e4199ac92459429d72ea777df8c2a
+      internalID: 453124154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_mon_24
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 272
+        width: 63
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfdb26154f8bce5409d9ddff5fe2ac92
+      internalID: -826448547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_mon_25
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 208
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1d7a3d5cb843f42abccd825946e1eb
+      internalID: 802579668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_mon_26
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 208
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a67e3a829f468479fae84aedc0a117
+      internalID: 1196714571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_mon_27
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 240
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 623e36645fd216b428c13ff702b4b50c
+      internalID: 414596633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_mon_28
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 368
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95e93c744be7d0d498f931724bb1b177
+      internalID: 1922195152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -116,7 +666,36 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      env_mon_0: -261293990
+      env_mon_1: -1552717178
+      env_mon_10: 29679508
+      env_mon_11: 898135445
+      env_mon_12: -1385230520
+      env_mon_13: 885629627
+      env_mon_14: 168776314
+      env_mon_15: -1792654668
+      env_mon_16: -1367857178
+      env_mon_17: -1000390390
+      env_mon_18: 1554368217
+      env_mon_19: -647553589
+      env_mon_2: 1285322116
+      env_mon_20: 1911401988
+      env_mon_21: 1818582521
+      env_mon_22: 1644265422
+      env_mon_23: 453124154
+      env_mon_24: -826448547
+      env_mon_25: 802579668
+      env_mon_26: 1196714571
+      env_mon_27: 414596633
+      env_mon_28: 1922195152
+      env_mon_3: -972579961
+      env_mon_4: 479600558
+      env_mon_5: 988519879
+      env_mon_6: -1198550470
+      env_mon_7: -1015481674
+      env_mon_8: 1439512204
+      env_mon_9: 1759702565
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

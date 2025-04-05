@@ -25,6 +25,16 @@ public class Player : MonoBehaviour
     //gema
     public GameObject gema;
 
+
+    //tiempo
+    public TextMeshProUGUI txtTimer;
+    private float timeValue;
+
+    //ganaste, perdiste
+    public GameObject ganaste;
+    public GameObject perdiste;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -33,6 +43,12 @@ public class Player : MonoBehaviour
 
         Contador = 0;
         gema.gameObject.SetActive(true);
+
+        timeValue = 50;
+
+        ganaste.gameObject.SetActive(false);
+        perdiste.gameObject.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -43,6 +59,26 @@ public class Player : MonoBehaviour
         transform.Translate(horizontal * runSpeed * Time.deltaTime, 0, 0);
 
         txtContador.text = "" + Contador; //score
+
+
+        timeValue -= Time.deltaTime;
+
+        txtTimer.text = FormatearTiempo(timeValue);
+
+        string FormatearTiempo(float timeValueo)
+        {
+
+            //Formateo minutos y segundos a dos d�gitos
+            //string minutos = Mathf.Floor(timeValue / 60).ToString("00");
+            string segundos = Mathf.Floor(timeValue % 60).ToString("00");
+
+            //Devuelvo el string formateado con : como separador
+            return "Time: " + segundos;
+        }
+
+
+
+
 
         if (horizontal > 0)
         {
@@ -61,23 +97,51 @@ public class Player : MonoBehaviour
             anim.SetBool("Walk_L", false);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && Mathf.Abs(rb.velocity.y) < 0.0001)
+        if (Input.GetKeyDown(KeyCode.Space) && Mathf.Abs(rb.linearVelocity.y) < 0.0001)
+
+        if (Input.GetKeyDown(KeyCode.Space) && Mathf.Abs(rb.linearVelocity.y) < 0.0001)
+
         {
             //anim.SetBool("Jump", true);
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
            
         }
         // Set Jump animation based on vertical velocity
-       /* if (Mathf.Abs(rb.velocity.y) > 0.85f)
+        /* if (Mathf.Abs(rb.velocity.y) > 0.85f)
+         {
+             anim.SetBool("Jump", true); // Player is in the air
+         }
+         else
+         {
+             anim.SetBool("Jump", false); // Player is on the ground
+         }
+
+         */
+
+
+        if (Contador == 1)
         {
-            anim.SetBool("Jump", true); // Player is in the air
-        }
-        else
-        {
-            anim.SetBool("Jump", false); // Player is on the ground
+           
+            ganaste.gameObject.SetActive(true);
+            runSpeed = 0;
+            jumpForce = 0;
+            Time.timeScale = 0;
+            txtTimer.gameObject.SetActive(false);
         }
 
-        */
+
+        if (timeValue <= 0)
+        {
+
+            perdiste.gameObject.SetActive(true);
+            Time.timeScale = 0;
+            runSpeed = 0;
+            jumpForce = 0;
+            txtTimer.gameObject.SetActive(false);
+        }
+
+
+
 
     }
 

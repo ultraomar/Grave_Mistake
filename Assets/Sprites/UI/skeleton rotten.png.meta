@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      skeleton rotten_0: -3022345544865910905
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

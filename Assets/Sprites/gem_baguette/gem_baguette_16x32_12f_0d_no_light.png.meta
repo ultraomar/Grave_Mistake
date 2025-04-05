@@ -126,6 +126,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -384,7 +397,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gem_baguette_16x32_12f_0d_no_light_0: 2994920109963984027
+      gem_baguette_16x32_12f_0d_no_light_1: 6014002174009414682
+      gem_baguette_16x32_12f_0d_no_light_10: 1479398800758239835
+      gem_baguette_16x32_12f_0d_no_light_2: -462881012051548410
+      gem_baguette_16x32_12f_0d_no_light_3: -4206417895708848461
+      gem_baguette_16x32_12f_0d_no_light_4: 6417996422004213160
+      gem_baguette_16x32_12f_0d_no_light_5: 8790328900480489924
+      gem_baguette_16x32_12f_0d_no_light_6: 2970414508417919589
+      gem_baguette_16x32_12f_0d_no_light_7: -6161257524617067811
+      gem_baguette_16x32_12f_0d_no_light_8: -4833584780854193670
+      gem_baguette_16x32_12f_0d_no_light_9: -7633673859284366075
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1483,10 +1483,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1497946169}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7937ace30592c4429e8baf7f73bdf5b, type: 3}
+  m_Script: {fileID: 11500000, guid: 3adbbf33d25ff584ca6609c04c834402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 10
+  runSpeed: 8
   jumpForce: 5
   txtContador: {fileID: 1547645877}
   gema: {fileID: 1568720668}

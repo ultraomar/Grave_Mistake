@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
     //ganaste, perdiste
     public GameObject ganaste;
     public GameObject perdiste;
-
+    private PlayerHealth playerHealth;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -48,12 +48,14 @@ public class Player : MonoBehaviour
 
         ganaste.gameObject.SetActive(false);
         perdiste.gameObject.SetActive(false);
-
+        playerHealth = FindObjectOfType<PlayerHealth>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        
         horizontal = Input.GetAxisRaw("Horizontal");
         
         transform.Translate(horizontal * runSpeed * Time.deltaTime, 0, 0);
@@ -138,6 +140,19 @@ public class Player : MonoBehaviour
             jumpForce = 0;
             txtTimer.gameObject.SetActive(false);
         }
+
+
+        if (playerHealth.HealthCount == 0)
+        {
+            perdiste.gameObject.SetActive(true);
+            Time.timeScale = 0;
+            runSpeed = 0;
+            jumpForce = 0;
+            txtTimer.gameObject.SetActive(false);
+        }
+
+
+
 
 
 

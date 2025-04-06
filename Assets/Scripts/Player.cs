@@ -99,15 +99,14 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && Mathf.Abs(rb.linearVelocity.y) < 0.0001)
 
-        if (Input.GetKeyDown(KeyCode.Space) && Mathf.Abs(rb.linearVelocity.y) < 0.0001)
-
+     
         {
             //anim.SetBool("Jump", true);
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
            
         }
         // Set Jump animation based on vertical velocity
-        /* if (Mathf.Abs(rb.velocity.y) > 0.85f)
+        if (Mathf.Abs(rb.linearVelocity.y) > 0.85f)
          {
              anim.SetBool("Jump", true); // Player is in the air
          }
@@ -116,7 +115,7 @@ public class Player : MonoBehaviour
              anim.SetBool("Jump", false); // Player is on the ground
          }
 
-         */
+         
 
 
         if (Contador == 1)

@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
     //ganaste, perdiste
     public GameObject ganaste;
     public GameObject perdiste;
-
+    private PlayerHealth playerHealth;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -48,12 +48,14 @@ public class Player : MonoBehaviour
 
         ganaste.gameObject.SetActive(false);
         perdiste.gameObject.SetActive(false);
-
+        playerHealth = FindObjectOfType<PlayerHealth>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        
         horizontal = Input.GetAxisRaw("Horizontal");
         
         transform.Translate(horizontal * runSpeed * Time.deltaTime, 0, 0);
@@ -99,15 +101,14 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && Mathf.Abs(rb.linearVelocity.y) < 0.0001)
 
-        if (Input.GetKeyDown(KeyCode.Space) && Mathf.Abs(rb.linearVelocity.y) < 0.0001)
-
+     
         {
             //anim.SetBool("Jump", true);
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
            
         }
         // Set Jump animation based on vertical velocity
-        /* if (Mathf.Abs(rb.velocity.y) > 0.85f)
+        if (Mathf.Abs(rb.linearVelocity.y) > 0.85f)
          {
              anim.SetBool("Jump", true); // Player is in the air
          }
@@ -116,7 +117,7 @@ public class Player : MonoBehaviour
              anim.SetBool("Jump", false); // Player is on the ground
          }
 
-         */
+         
 
 
         if (Contador == 1)
@@ -139,6 +140,19 @@ public class Player : MonoBehaviour
             jumpForce = 0;
             txtTimer.gameObject.SetActive(false);
         }
+
+
+        if (playerHealth.HealthCount == 0)
+        {
+            perdiste.gameObject.SetActive(true);
+            Time.timeScale = 0;
+            runSpeed = 0;
+            jumpForce = 0;
+            txtTimer.gameObject.SetActive(false);
+        }
+
+
+
 
 
 

@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
 
         ganaste.gameObject.SetActive(false);
         perdiste.gameObject.SetActive(false);
-        playerHealth = FindObjectOfType<PlayerHealth>();
+        playerHealth = Object.FindFirstObjectByType<PlayerHealth>();
     }
 
     // Update is called once per frame

@@ -1994,6 +1994,7 @@ GameObject:
   - component: {fileID: 1162362468842856897}
   - component: {fileID: 5862504071305445327}
   - component: {fileID: 5344402032932374252}
+  - component: {fileID: 3598785838455638305}
   m_Layer: 0
   m_Name: EliteSword
   m_TagString: Enemy
@@ -2010,8 +2011,8 @@ Transform:
   m_GameObject: {fileID: 6549120803944256361}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 44.03, y: -42.34, z: 0}
-  m_LocalScale: {x: 0.36358, y: 0.36358, z: 0.36358}
+  m_LocalPosition: {x: 40.08695, y: -39.95998, z: 0}
+  m_LocalScale: {x: 0.1603101, y: 0.1603101, z: 0.1603101}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7064193557352966901}
@@ -2164,6 +2165,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3598785838455638305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6549120803944256361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8df8f8f8816e024479eb83a6e0e67dd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  initTime: 2
 --- !u!1 &6860094587053586614
 GameObject:
   m_ObjectHideFlags: 0

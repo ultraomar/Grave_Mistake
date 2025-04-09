@@ -44,7 +44,7 @@ public class Botones : MonoBehaviour
     public void Créditos()
     {
 
-        SceneManager.LoadScene("Creditos");
+        SceneManager.LoadScene("Credits");
 
     }
 

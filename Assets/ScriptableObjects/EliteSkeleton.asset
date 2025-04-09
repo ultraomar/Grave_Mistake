@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68fa686e58e8c584aba3a23191af1da9, type: 3}
+  m_Name: EliteSkeleton
+  m_EditorClassIdentifier: 
+  attack: 2
+  hp: 5
+  handL: {fileID: 1904917220956785153, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  armLup: {fileID: 7741090865953942973, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  armLdwn: {fileID: 6936713861258854839, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  eyes: {fileID: 8248105740514632595, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  skull: {fileID: -3809517832424694339, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  ribbs: {fileID: -3280731413759696995, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  legLup: {fileID: -9179500336127258705, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  legLdwn: {fileID: -5200582396247425227, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  footL: {fileID: -1189816576475513783, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  pelv: {fileID: -2461139340913113788, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  spine: {fileID: -4795966419795555497, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  legRup: {fileID: -5887952053445295839, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  legRdwn: {fileID: -6283447467550141929, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  handR: {fileID: -6427860980135409040, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  armRup: {fileID: 499837098425899134, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  armRdwn: {fileID: 3419324946630680822, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  footR: {fileID: -9044476921313495690, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  skull_back: {fileID: -906191128830534531, guid: 4fb7e28d2619cb34e9eb139c3aa26955, type: 3}
+  weapon: {fileID: 0}
+  skColor: {r: 1, g: 0.9295865, b: 0, a: 1}

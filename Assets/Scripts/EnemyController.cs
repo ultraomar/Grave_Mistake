@@ -6,7 +6,6 @@ public class EnemyController : MonoBehaviour
         [SerializeField] private float speed = 1.0f;
 //        [SerializeField] private int hp = 2;
 //        [SerializeField] private int attack = 1;
-//        private Vector2 movement;
         public int direction = 1;
         public Vector2 CurPos;
         public float posX = 0.0f;
@@ -22,6 +21,9 @@ public class EnemyController : MonoBehaviour
 
         // Set default animation as Walk.
         anim.SetBool("Walk", true);
+
+        // Set default animation speed based on the current variant.
+        anim.speed = speed;
     }
 
     // Update is called once per frame

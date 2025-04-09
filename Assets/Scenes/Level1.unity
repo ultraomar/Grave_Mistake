@@ -1353,6 +1353,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1605858144}
     - target: {fileID: 9038706113816124732, guid: e79fbc347680f864ea64c6198044fb84, type: 3}
+      propertyPath: jumpForce
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9038706113816124732, guid: e79fbc347680f864ea64c6198044fb84, type: 3}
       propertyPath: txtContador
       value: 
       objectReference: {fileID: 1547645877}

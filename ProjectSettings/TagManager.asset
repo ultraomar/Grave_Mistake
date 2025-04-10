@@ -6,6 +6,7 @@ TagManager:
   tags:
   - gema
   - Enemy
+  - Meta
   layers:
   - Default
   - TransparentFX

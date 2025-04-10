@@ -5,41 +5,39 @@ using TMPro;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
-
-
-    
 {
-
     private Rigidbody2D rb;
     private float horizontal;
- 
     private Animator anim;
 
     [SerializeField] private float runSpeed = 5.0f;
     [SerializeField] private float jumpForce = 5.0f;
 
-    //contador de gemas
+    [SerializeField] private float fallMultiplier = 2.5f;       // Caída más rápida
+    [SerializeField] private float lowJumpMultiplier = 2.0f;    // Saltos cortos si sueltas rápido
+
     public TextMeshProUGUI txtContador;
     private int Contador;
 
-    //gema
     public GameObject gema;
 
-
-    //tiempo
     public TextMeshProUGUI txtTimer;
     private float timeValue;
 
-    //ganaste, perdiste
     public GameObject ganaste;
     public GameObject perdiste;
     private PlayerHealth playerHealth;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // Agregar referencia al AudioSource
+    private AudioSource audioSource;
+    public AudioClip recoleccionSonido; // Drag and drop your sound clip here in the inspector
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+
+        audioSource = GetComponent<AudioSource>(); // Obtén el AudioSource
 
         Contador = 0;
         gema.gameObject.SetActive(true);
@@ -51,36 +49,20 @@ public class Player : MonoBehaviour
         playerHealth = Object.FindFirstObjectByType<PlayerHealth>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-
-        
         horizontal = Input.GetAxisRaw("Horizontal");
-        
         transform.Translate(horizontal * runSpeed * Time.deltaTime, 0, 0);
 
-        txtContador.text = "" + Contador; //score
-
-
+        txtContador.text = "" + Contador;
         timeValue -= Time.deltaTime;
-
         txtTimer.text = FormatearTiempo(timeValue);
 
         string FormatearTiempo(float timeValueo)
         {
-
-            //Formateo minutos y segundos a dos d�gitos
-            //string minutos = Mathf.Floor(timeValue / 60).ToString("00");
             string segundos = Mathf.Floor(timeValue % 60).ToString("00");
-
-            //Devuelvo el string formateado con : como separador
             return "Time: " + segundos;
         }
-
-
-
-
 
         if (horizontal > 0)
         {
@@ -90,6 +72,7 @@ public class Player : MonoBehaviour
         {
             anim.SetBool("Walk_R", false);
         }
+
         if (horizontal < 0)
         {
             anim.SetBool("Walk_L", true);
@@ -99,50 +82,30 @@ public class Player : MonoBehaviour
             anim.SetBool("Walk_L", false);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && Mathf.Abs(rb.linearVelocity.y) < 0.0001)
-
-     
+        // SALTO con tolerancia
+        if (Input.GetKeyDown(KeyCode.Space) && Mathf.Abs(rb.linearVelocity.y) < 0.5f)
         {
-           
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
-          
         }
 
-        
-        //Set Jump animation based on vertical velocity
-        /*if (Mathf.Abs(rb.linearVelocity.y) > 0.85f)
-         {
-             anim.SetBool("Jump", true); // Player is in the air
-         }
-         else
-         {
-             anim.SetBool("Jump", false); // Player is on the ground
-         }
-        
-
-        */
-
-        if (Contador == 1)
+        // 👇 Gravedad personalizada para salto más natural
+        if (rb.linearVelocity.y < 0)
         {
-           
-            ganaste.gameObject.SetActive(true);
-            runSpeed = 0;
-            jumpForce = 0;
-            Time.timeScale = 0;
-            txtTimer.gameObject.SetActive(false);
+            rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
         }
-
+        else if (rb.linearVelocity.y > 0 && !Input.GetKey(KeyCode.Space))
+        {
+            rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+        }
 
         if (timeValue <= 0)
         {
-
             perdiste.gameObject.SetActive(true);
             Time.timeScale = 0;
             runSpeed = 0;
             jumpForce = 0;
             txtTimer.gameObject.SetActive(false);
         }
-
 
         if (playerHealth.HealthCount == 0)
         {
@@ -152,26 +115,28 @@ public class Player : MonoBehaviour
             jumpForce = 0;
             txtTimer.gameObject.SetActive(false);
         }
-
-
-
-
-
-
-
     }
-
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        // Recolectar gema
         if (other.gameObject.CompareTag("gema"))
         {
-            //anillo.gameObject.SetActive(false);
+            // Reproduce el sonido de recolección
+            audioSource.PlayOneShot(recoleccionSonido);
 
             Destroy(other.gameObject);
             Contador += 1;
-       
         }
-       
+
+        // Colisión con la meta para ganar
+        if (other.gameObject.CompareTag("Meta"))
+        {
+            ganaste.gameObject.SetActive(true);
+            runSpeed = 0;
+            jumpForce = 0;
+            Time.timeScale = 0;
+            txtTimer.gameObject.SetActive(false);
+        }
     }
 }

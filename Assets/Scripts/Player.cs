@@ -60,8 +60,9 @@ public class Player : MonoBehaviour
 
         string FormatearTiempo(float timeValueo)
         {
+            string minutos = Mathf.Floor(timeValue / 60).ToString("00");
             string segundos = Mathf.Floor(timeValue % 60).ToString("00");
-            return "Time: " + segundos;
+            return "Time:" + minutos + ":" + segundos;
         }
 
         if (horizontal > 0)

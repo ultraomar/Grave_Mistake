@@ -33,7 +33,7 @@ public class Botones : MonoBehaviour
    
     public void Menu()
     {
-
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Menu_inicio");
 
     }
@@ -43,7 +43,7 @@ public class Botones : MonoBehaviour
 
     public void Créditos()
     {
-
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Credits");
 
     }

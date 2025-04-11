@@ -122,7 +122,7 @@ public class Player : MonoBehaviour
 
         */
 
-        if (Contador == 1)
+        if (Contador == 6)
         {
            
             ganaste.gameObject.SetActive(true);

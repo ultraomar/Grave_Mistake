@@ -31,6 +31,8 @@ public class Player : MonoBehaviour
     // Agregar referencia al AudioSource
     private AudioSource audioSource;
     public AudioClip recoleccionSonido; // Drag and drop your sound clip here in the inspector
+    public AudioClip enemy;
+
 
     void Start()
     {
@@ -150,6 +152,13 @@ public class Player : MonoBehaviour
 
             transform.position = new Vector3(-7, -3, 0);
            
+        }
+
+        if (other.gameObject.tag == "Enemy")
+        {
+
+            audioSource.PlayOneShot(enemy);
+
         }
     }
 }

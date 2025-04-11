@@ -88,8 +88,12 @@ public class Player : MonoBehaviour
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
         }
 
-        // 👇 Gravedad personalizada para salto más natural
+
+
+        if (Contador == 6)
+
         if (rb.linearVelocity.y < 0)
+
         {
             rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
         }

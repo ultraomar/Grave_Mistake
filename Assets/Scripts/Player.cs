@@ -42,7 +42,7 @@ public class Player : MonoBehaviour
         Contador = 0;
         gema.gameObject.SetActive(true);
 
-        timeValue = 50;
+        timeValue = 100;
 
         ganaste.gameObject.SetActive(false);
         perdiste.gameObject.SetActive(false);
@@ -141,6 +141,14 @@ public class Player : MonoBehaviour
             jumpForce = 0;
             Time.timeScale = 0;
             txtTimer.gameObject.SetActive(false);
+        }
+
+
+        if (other.gameObject.tag == "collider")
+        {
+
+            transform.position = new Vector3(-7, -3, 0);
+           
         }
     }
 }

@@ -95,15 +95,15 @@ public class Player : MonoBehaviour
 
         if (Contador == 6)
 
-        if (rb.linearVelocity.y < 0)
+            if (rb.linearVelocity.y < 0)
 
-        {
-            rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
-        }
-        else if (rb.linearVelocity.y > 0 && !Input.GetKey(KeyCode.Space))
-        {
-            rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
-        }
+            {
+                rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+            }
+            else if (rb.linearVelocity.y > 0 && !Input.GetKey(KeyCode.Space))
+            {
+                rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+            }
 
         if (timeValue <= 0)
         {
@@ -151,14 +151,21 @@ public class Player : MonoBehaviour
         {
 
             transform.position = new Vector3(-7, -3, 0);
-           
+
         }
 
-        if (other.gameObject.tag == "Enemy")
+        
+    }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
         {
 
             audioSource.PlayOneShot(enemy);
 
         }
+
     }
-}
+    }

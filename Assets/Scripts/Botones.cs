@@ -23,7 +23,7 @@ public class Botones : MonoBehaviour
     public void Jugar()
     {
 
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Level_01");
         Time.timeScale = 1f;
 
     }
